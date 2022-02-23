@@ -1,0 +1,108 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+    background-color: var(--preto);
+    font-family:'Arial', Times, serif;
+    color:white;
+}
+
+header .container{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: None;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/Capa_Riverdale.jpg');
+    
+    height: 450px;
+    background-size: cover;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: 8px;
+}
+
+.título{
+    margin-top: 15%;
+    margin-left: 5px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: None;
+    color: white; 
+
+    padding: 15px 30px;
+    margin: auto 8px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .7s ease all;
+}
+
+.botao:hover{
+    background-color: rgb(155, 144, 144);
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.botao a{
+    color: white;
+    text-decoration: none;
+}
+
+.botao a:hover{
+    text-decoration: underline;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 7px;
+}
